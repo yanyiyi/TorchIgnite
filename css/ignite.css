@@ -234,3 +234,7 @@ a:hover,.tagged:hover{
 textarea{
 height: 400px;
 }
+.stillworking{
+    background:  url(../img/working-01.png) no-repeat rgba(225,0,0,0.2);
+    background-size: contain;
+}
