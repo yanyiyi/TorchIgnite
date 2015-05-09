@@ -1,0 +1,44 @@
+@media (max-width: 767px){
+	body{
+		margin-top: 0px;
+	}
+
+    .s_display{
+    display: none;
+    }
+    .p_display{
+    display: block;
+    }
+}
+
+
+@media (min-width: 768px){
+	body{
+	margin-top: -75px;
+	}
+    .nav_disable{
+    display: none;
+    }
+    .s_display{
+    display: none;
+    }
+    .p_display{
+    display: block;
+    }
+
+}
+
+@media (min-width: 992px){
+	body{
+	margin-top: -75px;
+	}
+    .nav_disable{
+    display: none;
+    }
+    .p_display{
+    display: none;
+    }
+    .s_display{
+    display: block;
+    }
+}
