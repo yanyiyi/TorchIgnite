@@ -14,6 +14,9 @@
     .video_size {
         height: 160px;
     }
+    .m_display {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -25,6 +28,9 @@
     }
     .s_display {
         display: none;
+    }
+    .m_display {
+        display: block;
     }
     .p_display {
         display: block;
@@ -46,6 +52,9 @@
     }
     .p_display {
         display: none;
+    }
+    .m_display {
+        display: block;
     }
     .s_display {
         display: block;

@@ -34,9 +34,10 @@ body {
 }
 
 .btn_menu {
+    padding: 0px;
     background: url(../img/menubar-01.png) repeat-x bottom;
     background-size: 100px;
-    height: 150px;
+    height: 300px;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -69,6 +70,9 @@ body {
     width: 100%;
     font-size: 9px;
     z-index: 3;
+    -webkit-box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
+-moz-box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
+box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
 }
 
 .btn_menu_mobile a {
@@ -90,8 +94,10 @@ body {
     width: 45px;
     height: 45px;
 }
-
-.btn_menu a {
+.link{
+    padding-top: 180px;
+}
+.btn_menu .link a {
     color: #FFF;
     height: 120px;
     text-align: center;
@@ -99,7 +105,7 @@ body {
     background-size: contain;
 }
 
-.btn_menu a:hover {
+.btn_menu .link a:hover {
     color: #FFF;
     height: 120px;
     background: url(../img/btn_big-02.png) center top no-repeat;
@@ -107,11 +113,53 @@ body {
     text-align: center;
 }
 
-.btn_menu a img {
-    width: 80px;
-    height: 80px;
+.btn_menu .link a img {
+    margin-top: 5px;
+    width: 75px;
+    height: 75px;
 }
 
+
+
+.top_menu a {
+    color: #FFF;
+    height: 70px;
+    text-align: center;
+    background: url(../img/btn_top-01.png) center top no-repeat;
+    background-size: contain;
+}
+
+.top_menu a:hover {
+    color: #FFF;
+    height: 70px;
+    background: url(../img/btn_top-02.png) center top no-repeat;
+    background-size: contain;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top_menu a img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+.logo_h{
+height: 300px;
+    display: block;
+}
+.logo{
+    background: url(../img/logo-01.png) right bottom no-repeat;
+    height: 100%;
+    display: block;
+    background-size: contain;
+}
+
+.logo:hover{
+    background: url(../img/logo_over-01.png) right bottom no-repeat;
+    height: 100%;
+    display: block;
+    background-size: contain;
+}
 .video_size {
     border: none;
 }
