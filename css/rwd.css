@@ -9,6 +9,12 @@
     .p_display{
     display: block;
     }
+    .top_menu{
+    height: 150px;
+    }
+    .video_size{
+        height: 240px;
+    }
 }
 
 
@@ -24,6 +30,12 @@
     }
     .p_display{
     display: block;
+    }
+     .top_menu{
+    height: 175px;
+    }
+    .video_size{
+        height: 240px;
     }
 
 }
@@ -41,4 +53,9 @@
     .s_display{
     display: block;
     }
+    .video_size{
+        height: 240px;
+    }
 }
+
+

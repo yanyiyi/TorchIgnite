@@ -10,7 +10,12 @@ body{
     background-size: 30px 75px;
     background-position: 0 25px;
 }
-
+.btn_bk{
+    height: 50px;
+    background: url(../img/bk_dark-03.png);
+    background-size: 30px 75px;
+    background-position: bottom;
+}
 .bk{
     display: block;
     height: 50%;
@@ -32,4 +37,17 @@ body{
     bottom: 0px;
     left: 0px;
     width: 100%;
+}
+
+.top_menu{
+    position: absolute;
+   background: url(../img/menu_left-01.png) no-repeat top right;
+    height: 200px;
+    background-size: contain;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.main_home{
+    padding: 0px;
 }
