@@ -5,13 +5,14 @@ body{
 
 .top_bk{
     display: block;
-    height: 75px;
+    height: 25px;
     background: url(../img/bk_dark-01.png);
-    background-size: 30px 75px;
-    background-position: 0 25px;
+    background-size: 30px 25px;
+    background-position: 0 0px;
 }
 .btn_bk{
     height: 50px;
+    background: url(../img/bk_dark-03.png);
     background: url(../img/bk_dark-03.png);
     background-size: 30px 75px;
     background-position: bottom;
