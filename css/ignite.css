@@ -175,6 +175,8 @@ div {
 
 .video_size {
     border: none;
+    padding: none;
+    margin: none;
 }
 
 .top_link {
@@ -237,4 +239,7 @@ height: 400px;
 .stillworking{
     background:  url(../img/working-01.png) no-repeat rgba(225,0,0,0.2);
     background-size: contain;
+}
+.smw{
+font-size: 9px;
 }
