@@ -1,36 +1,39 @@
-body{
+body {
     background: url(../img/bk-01.png);
     background-size: 300px 300px;
 }
 
-.top_bk{
+.top_bk {
     display: block;
     height: 25px;
     background: url(../img/bk_dark-01.png);
     background-size: 30px 25px;
     background-position: 0 0px;
 }
-.btn_bk{
+
+.btn_bk {
     height: 50px;
     background: url(../img/bk_dark-03.png);
     background: url(../img/bk_dark-03.png);
     background-size: 30px 75px;
     background-position: bottom;
 }
-.bk{
+
+.bk {
     display: block;
     height: 50%;
     background: url(../img/bk_dark-02.png);
 }
 
-.banner{
+.banner {
     background: url(../img/moblie_nav-01.png);
     display: block;
     width: 70%;
     background-size: contain;
     background-repeat: no-repeat;
 }
-.btn_menu{
+
+.btn_menu {
     background: url(../img/menubar-01.png) repeat-x bottom;
     background-size: 100px;
     height: 150px;
@@ -41,9 +44,9 @@ body{
     z-index: 3;
 }
 
-.top_menu{
+.top_menu {
     position: absolute;
-   background: url(../img/menu_left-01.png) no-repeat top right;
+    background: url(../img/menu_left-01.png) no-repeat top right;
     height: 200px;
     background-size: contain;
     top: 0px;
@@ -51,10 +54,12 @@ body{
     width: 100%;
     z-index: 2;
 }
-.main_home{
+
+.main_home {
     padding: 0px;
 }
-.btn_menu_mobile{
+
+.btn_menu_mobile {
     color: #FFF;
     background: #fdd000;
     height: 65px;
@@ -65,43 +70,48 @@ body{
     font-size: 9px;
     z-index: 3;
 }
-.btn_menu_mobile a{
+
+.btn_menu_mobile a {
     color: #FFF;
     height: 65px;
     text-align: center;
     border-right: solid 1px;
-        font-size: 9px;
+    font-size: 10px;
 }
-.btn_menu_mobile a:hover{
+
+.btn_menu_mobile a:hover {
     color: #FFF;
     height: 65px;
     text-align: center;
-        font-size: 9px;
+    font-size: 10px;
 }
-.btn_menu_mobile a img{
+
+.btn_menu_mobile a img {
     width: 45px;
     height: 45px;
 }
 
-.btn_menu a{
+.btn_menu a {
     color: #FFF;
     height: 120px;
     text-align: center;
     background: url(../img/btn_big-01.png) center top no-repeat;
     background-size: contain;
 }
-.btn_menu a:hover{
+
+.btn_menu a:hover {
     color: #FFF;
     height: 120px;
     background: url(../img/btn_big-02.png) center top no-repeat;
     background-size: contain;
     text-align: center;
 }
-.btn_menu a img{
+
+.btn_menu a img {
     width: 80px;
     height: 80px;
 }
 
-.video_size{
+.video_size {
     border: none;
-    }
+}
