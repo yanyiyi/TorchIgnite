@@ -2,14 +2,17 @@ body {
     background: url(../img/bk-01.png);
     background-size: 300px 300px;
 }
-h1{
+
+h1 {
     color: #595648;
     font-size: 24px;
 }
-div{
+
+div {
     color: #595648;
-    font-size: 11px;
+    font-size: 14px;
 }
+
 .top_bk {
     display: block;
     height: 25px;
@@ -43,9 +46,9 @@ div{
 .btn_menu {
     padding: 0px;
     background: url(../img/menubar-01.png) repeat-x bottom;
-    background-size: 100px;
-    height: 300px;
-    position: fixed;fixed;
+    background-size: 150px;
+    height: 200px;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
@@ -77,9 +80,9 @@ div{
     width: 100%;
     font-size: 9px;
     z-index: 3;
-    -webkit-box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
--moz-box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
-box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
+    -webkit-box-shadow: 0px -2px 3px 0px rgba(209, 209, 209, 1);
+    -moz-box-shadow: 0px -2px 3px 0px rgba(209, 209, 209, 1);
+    box-shadow: 0px -2px 3px 0px rgba(209, 209, 209, 1);
 }
 
 .btn_menu_mobile a {
@@ -101,9 +104,11 @@ box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
     width: 45px;
     height: 45px;
 }
-.link{
-    padding-top: 180px;
+
+.link {
+    padding-top: 80px;
 }
+
 .btn_menu .link a {
     color: #FFF;
     height: 120px;
@@ -126,10 +131,7 @@ box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
     height: 75px;
 }
 
-
-
 .top_menu a {
-    
     color: #FFF;
     height: 70px;
     text-align: center;
@@ -151,30 +153,80 @@ box-shadow: 0px -2px 3px 0px rgba(209,209,209,1);
     width: 30px;
     height: 30px;
 }
-.logo_h{
-height: 300px;
+
+.logo_h {
+    height: 200px;
     display: block;
 }
-.logo{
+
+.logo {
     background: url(../img/logo-01.png) right bottom no-repeat;
     height: 100%;
     display: block;
     background-size: contain;
 }
 
-.logo:hover{
+.logo:hover {
     background: url(../img/logo_over-01.png) right bottom no-repeat;
     height: 100%;
     display: block;
     background-size: contain;
 }
+
 .video_size {
     border: none;
 }
+
 .top_link {
     padding-top: 25px;
 }
-.special_people{
+
+.special_people {
     text-align: center;
+}
+
+.h_title {
+    width: 210px;
+    height: 60px;
+    background: url(../img/title-01.png) center;
+    background-size: contain;
+    padding-top: 1px;
+}
+.main_content{
+    font-size: 14px;
     
+}
+table{
+    text-align: center
+}
+th{
+    background: #595648;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+td{
+    border: 2px solid #FFF;
+}
+
+a,.tagged{
+    font-weight: bold;
+     color:#595648;
+}
+a:hover,.tagged:hover{
+    color: #dcb500;
+    background-color: #595648;
+}
+.spypannel{
+    margin-top: 15%;
+    text-align: right;
+}
+
+#myScrollspy .active{
+    background-color: transparent;
+    border: none;
+    border-right: #595648 3px solid;
+}
+.form_h{
+    border: none;
+    height: 500px;
 }
