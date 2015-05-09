@@ -1,6 +1,6 @@
 @media (max-width: 767px){
 	body{
-		margin-top: 0px;
+		margin-top: 25px;
 	}
 
     .s_display{
@@ -20,7 +20,7 @@
 
 @media (min-width: 768px){
 	body{
-	margin-top: -75px;
+	margin-top: 0px;
 	}
     .nav_disable{
     display: none;
@@ -42,7 +42,7 @@
 
 @media (min-width: 992px){
 	body{
-	margin-top: -75px;
+	margin-top: 0px;
 	}
     .nav_disable{
     display: none;

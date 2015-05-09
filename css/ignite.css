@@ -33,7 +33,7 @@ body{
 .btn_menu{
     background: url(../img/menubar-01.png) repeat-x bottom;
     background-size: 100px;
-    height: 300px;
+    height: 150px;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -52,3 +52,50 @@ body{
 .main_home{
     padding: 0px;
 }
+.btn_menu_mobile{
+    color: #FFF;
+    background: #fdd000;
+    height: 65px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.btn_menu_mobile a{
+    color: #FFF;
+    height: 65px;
+    text-align: center;
+    border-right: solid 1px;
+}
+.btn_menu_mobile a:hover{
+    color: #FFF;
+    height: 65px;
+    text-align: center;
+}
+.btn_menu_mobile a img{
+    width: 45px;
+    height: 45px;
+}
+
+.btn_menu a{
+    color: #FFF;
+    height: 120px;
+    text-align: center;
+    background: url(../img/btn_big-01.png) center top no-repeat;
+    background-size: contain;
+}
+.btn_menu a:hover{
+    color: #FFF;
+    height: 120px;
+    background: url(../img/btn_big-02.png) center top no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+.btn_menu a img{
+    width: 80px;
+    height: 80px;
+}
+
+.video_size{
+    border: none;
+    }
