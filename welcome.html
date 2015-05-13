@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="火把行道會">
-    <title>FireStrom 星火崛起 【邀請朋友】— 火把教會Ignite青年特會 -</title>
-
+    <title>FireStrom 星火崛起【專屬邀請】— 火把教會Ignite青年特會</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="./css/ignite.css">
@@ -34,6 +33,27 @@
         ga('require', 'displayfeatures');
         ga('send', 'pageview');
     </script>
+    <script type="text/javascript">
+  var strUrl = location.search;
+  var getPara, ParaVal;
+  var aryPara = [];
+ 
+  if (strUrl.indexOf("?") != -1) {
+    var getSearch = strUrl.split("?");
+    getPara = getSearch[1].split("&");
+    for (i = 0; i < getPara.length; i++) {
+      ParaVal = getPara[i].split("=");
+      aryPara.push(ParaVal[0]);
+      aryPara[ParaVal[0]] = ParaVal[1];
+    }
+ aryPara["fName"]
+ var ftitle = "FireStrom 星火崛起【"+aryPara["fName"]+"】— 火把教會Ignite青年特會";
+ document.title = ftitle;
+  }
+        
+</script>
+
+
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy">
@@ -108,21 +128,21 @@
 
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 clearfix main_content">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 clearfix main_content stillworking">
                
                 <div class="h_title">
-                    <h1>邀請你的朋友</h1>
+                    <h1 id="fName_Title">嗨</h1>
                 </div>
-
+<span style="color:red;">本功能即將開放，敬請期待！</span>
                         <br><br><br><br>
-                        <form class="form-group">
+                        <form class="form-group" method="get" >
                             <span>您的姓名</span><input type="text" id="invitename"
   class="col-xs-12 col-sm-12 col-md-6 col-lg-4 form-control" ><br>
                             朋友名字<input type="text" id="friendsname" class="form-control col-xs-12 col-sm-12 col-md-6 col-lg-4"><br><br>
                             對他說的話<br>
                             <textarea id="talk" class="col-xs-10 col-sm-10 col-md-8 col-lg-9 form-control">這邊你可以輸入你要邀請他的話語</textarea><br><br>
                             <div class="clearfix"></div>
-                            <input  value="取得專屬邀請網址" class="btn btn-default" id="getURL"> 
+                            <input type="submit" value="取得專屬邀請網址" class="btn btn-default" id="getURL"> 
                             
                             
                             
@@ -204,16 +224,14 @@
     <script src="./js/bootstrap.min.js"></script>
     
        <script type="text/javascript">
-        $(document).ready(function() {
-              $("#getURL").click(function(){
-                alert($("#invitename").val() + "送出了！");
-var sNameAnswer = encodeURIComponent($("#invitename").val());
-var fNameAnswer = encodeURIComponent($("#friendsname").val());
-var talkAnswer = encodeURIComponent($("#talk").val());
-                  
-                  location.assign("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer);
-            });
-        });
+           $(document).ready(function() {
+       alert(aryPara["fName"]);         $("#fName_Title").text(aryPara["fName"]);
+           
+           
+           
+           });
+           
+           
     </script>
               
 </body>
