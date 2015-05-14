@@ -124,7 +124,7 @@
                             <div class="clearfix"></div>
                             <input  value="取得專屬邀請網址" class="btn btn-default" id="getURL"> 
                             
-                            
+                            <div id="newURL">12</div>
                             
                         </form>
                       
@@ -206,13 +206,18 @@
        <script type="text/javascript">
         $(document).ready(function() {
               $("#getURL").click(function(){
-                alert($("#invitename").val() + "送出了！");
+                
 var sNameAnswer = encodeURIComponent($("#invitename").val());
 var fNameAnswer = encodeURIComponent($("#friendsname").val());
 var talkAnswer = encodeURIComponent($("#talk").val());
                   
+                alert("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer);
+                  
+                  //$("#newURL").text("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer); 
+                  
                   location.assign("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer);
             });
+           
         });
     </script>
               

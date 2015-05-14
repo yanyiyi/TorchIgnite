@@ -34,7 +34,7 @@
         ga('send', 'pageview');
     </script>
     <script type="text/javascript">
-  var strUrl = location.search;
+  var strUrl = decodeURIComponent(location.search);
   var getPara, ParaVal;
   var aryPara = [];
  
@@ -46,11 +46,11 @@
       aryPara.push(ParaVal[0]);
       aryPara[ParaVal[0]] = ParaVal[1];
     }
- aryPara["fName"]
+   alert(aryPara["fName"]);        
+      
  var ftitle = "FireStrom 星火崛起【"+aryPara["fName"]+"】— 火把教會Ignite青年特會";
  document.title = ftitle;
-  }
-        
+  }  
 </script>
 
 
@@ -128,12 +128,12 @@
 
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 clearfix main_content stillworking">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 clearfix main_content ">
                
                 <div class="h_title">
-                    <h1 id="fName_Title">嗨</h1>
+                    <h1 id="fName_Title"></h1>
                 </div>
-<span style="color:red;">本功能即將開放，敬請期待！</span>
+
                         <br><br><br><br>
                         <form class="form-group" method="get" >
                             <span>您的姓名</span><input type="text" id="invitename"
@@ -184,15 +184,10 @@
 
             <div class=" col-md-5 col-lg-6 link">
                 <div class="row">
-                    <a class="col-md-3 col-lg-3" href="./reg.html"><img alt="我要報名" src="img/icon-01.png">
+                    <a class="col-md-12 col-lg-12" href="./reg.html"><img alt="我要報名" src="img/icon-01.png">
                         <br> 我要報名
                     </a>
-                    <a class="col-md-3 col-lg-3" href="./info.html"><img alt="活動資訊" src="img/icon-02.png">
-                        <br>活動資訊</a>
-                    <a class="col-md-3 col-lg-3" href="./review.html"><img alt="熱力回顧" src="img/icon-03.png">
-                        <br>熱力回顧</a>
-                    <a class="col-md-3 col-lg-3" href="./invite.html"><img alt="邀請朋友" src="img/icon-04.png">
-                        <br>邀請朋友</a>
+                   
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 logo_h">
@@ -205,15 +200,10 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 ">
                 <div class="row">
-                    <a class="col-xs-3 col-sm-3" href="./reg.html"><img alt="我要報名" src="img/icon-01.png">
+                    <a class="col-xs-12 col-sm-12" href="./reg.html"><img alt="我要報名" src="img/icon-01.png">
                         <br> 我要報名
                     </a>
-                    <a class="col-xs-3 col-sm-3" href="./info.html"><img alt="活動資訊" src="img/icon-02.png">
-                        <br>活動資訊</a>
-                    <a class="col-xs-3 col-sm-3" href="./review.html"><img alt="熱力回顧" src="img/icon-03.png">
-                        <br>熱力回顧</a>
-                    <a class="col-xs-3 col-sm-3" href="./invite.html"><img alt="邀請朋友" src="img/icon-04.png">
-                        <br>邀請朋友</a>
+                    
                 </div>
             </div>
         </div>
@@ -225,10 +215,10 @@
     
        <script type="text/javascript">
            $(document).ready(function() {
-       alert(aryPara["fName"]);         $("#fName_Title").text(aryPara["fName"]);
-           
-           
-           
+        $("#fName_Title").text("嗨，"+aryPara["fName"]);
+           $("#fName_Title").text("嗨，"+aryPara["fName"]);
+               $("#fName_Title").text("嗨，"+aryPara["fName"]);
+
            });
            
            
