@@ -120,7 +120,7 @@
         </div>
         <div class="row bk">
             <div class="col-md-2 col-lg-1 s_display"></div>
-            <div class="col-md-2 col-lg-2  s_display spypannel" id="myScrollspy">
+            <div class="col-md-2 col-lg-2 s_display spypannel" id="myScrollspy">
 
                 
 
@@ -129,24 +129,30 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 clearfix main_content ">
-               
+             
                 <div class="h_title">
-                    <h1 id="fName_Title"></h1>
+                    <h1>嗨，<span class="fName_Title tagged">新朋友</span></h1>
                 </div>
+                        
+                    
 
                         <br><br><br><br>
-                        <form class="form-group" method="get" >
-                            <span>您的姓名</span><input type="text" id="invitename"
-  class="col-xs-12 col-sm-12 col-md-6 col-lg-4 form-control" ><br>
-                            朋友名字<input type="text" id="friendsname" class="form-control col-xs-12 col-sm-12 col-md-6 col-lg-4"><br><br>
-                            對他說的話<br>
-                            <textarea id="talk" class="col-xs-10 col-sm-10 col-md-8 col-lg-9 form-control">這邊你可以輸入你要邀請他的話語</textarea><br><br>
-                            <div class="clearfix"></div>
-                            <input type="submit" value="取得專屬邀請網址" class="btn btn-default" id="getURL"> 
+                        <div class="" >
+                           <span class="sName_Title tagged">好朋友</span>邀請<span class="fName_Title tagged">你</span>
+來參加<br>  <p><span class="tagged">
+                    星火崛起 Firestorm
+                    <br> 2015 Ignite 火把教會青年特會
+                    <br> 激勵挑旺 X 瘋狂遊戲 X LIVE BAND </span><br>
+                    國王在逃．都城中暗潮洶湧<br>
+                    遊戲在跑．戰場上敵我難分
+                </p>
+                       <br>
+                       <span class="sName_Title tagged">好朋友</span>想對你說：
+                        <div class="talkAns">
                             
-                            
-                            
-                        </form>
+                        </div>    
+                        
+                </div>
                       
           
                 
@@ -215,10 +221,10 @@
     
        <script type="text/javascript">
            $(document).ready(function() {
-        $("#fName_Title").text("嗨，"+aryPara["fName"]);
-           $("#fName_Title").text("嗨，"+aryPara["fName"]);
-               $("#fName_Title").text("嗨，"+aryPara["fName"]);
-
+        $(".fName_Title").text(aryPara["fName"]);
+           $(".sName_Title").text(aryPara["sName"]);
+               $(".talkAns").text(aryPara["talk"]);
+             
            });
            
            

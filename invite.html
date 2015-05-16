@@ -122,10 +122,20 @@
                             對他說的話<br>
                             <textarea id="talk" class="col-xs-10 col-sm-10 col-md-8 col-lg-9 form-control">這邊你可以輸入你要邀請他的話語</textarea><br><br>
                             <div class="clearfix"></div>
-                            <input  value="取得專屬邀請網址" class="btn btn-default" id="getURL"> 
+                            <input  value="取得邀請網址" class="btn btn-default" id="getURL"> 
+ 
+                            <input  value="重新修改" class="btn btn-default" type="reset"> 
                             
-                            <div id="newURL">12</div>
                             
+                               </form>
+                                        <form>
+                            
+                            
+                            你邀請網址如下<br>
+                            <textarea id="yourURL" class="col-xs-10 col-sm-10 col-md-8 col-lg-9 form-control"></textarea>
+                            <br>
+                            <input  value="前往邀請網址" class="btn btn-default" id="goURL">
+                            <input  value="分享到臉書" class="btn btn-default" id="goFB">
                         </form>
                       
           
@@ -205,22 +215,41 @@
     
        <script type="text/javascript">
         $(document).ready(function() {
+
               $("#getURL").click(function(){
                 
 var sNameAnswer = encodeURIComponent($("#invitename").val());
 var fNameAnswer = encodeURIComponent($("#friendsname").val());
 var talkAnswer = encodeURIComponent($("#talk").val());
                   
-                alert("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer);
-                  
+               
                   //$("#newURL").text("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer); 
                   
-                  location.assign("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk"+talkAnswer);
+                 alert("更改./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk="+talkAnswer);
+                  
+                  $("#yourURL").text("http://torchchurch.com/ignite/welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk="+talkAnswer);
+                  
             });
-           
+           $("#goURL").click(function(){
+               
+var sNameAnswer = encodeURIComponent($("#invitename").val());
+var fNameAnswer = encodeURIComponent($("#friendsname").val());
+var talkAnswer = encodeURIComponent($("#talk").val());
+               
+            location.assign("./welcome.html?sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk="+talkAnswer);
         });
-    </script>
-              
+            
+            $("#goFB").click(function(){
+               
+var sNameAnswer = encodeURIComponent($("#invitename").val());
+var fNameAnswer = encodeURIComponent($("#friendsname").val());
+var talkAnswer = encodeURIComponent($("#talk").val());
+               
+            location.assign("http://www.facebook.com/share.php?u="+encodeURIComponent("http://torchignite.yannest.com/welcome.html?")+"sName="+sNameAnswer+"&fName="+fNameAnswer+"&talk="+talkAnswer);
+        });
+            
+    });
+    </script>              
 </body>
 
 </html>
